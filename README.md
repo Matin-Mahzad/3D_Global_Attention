@@ -46,16 +46,16 @@ model = Attention3DUNet(in_channels=1, out_channels=1, base_channels=32)
 # Process seismic volume
 seismic_input = torch.randn(1, 1, D, H, W)  # D, H, W are volume dimensions
 denoised_output = model(seismic_input)
-License
+# License
 This project is licensed under the MIT License - see the LICENSE file for details.
-Citation
+# Citation
 If you use this code in your research, please cite:
 @article{mahzad2025seismic,
   title={True 3D Global Attention Convolutional Network for Self-Supervised Denoising of Real-World Post-Stack Seismic Volumes},
   author={Mahzad, Matin and Mehrabi, Amirreza and Bagheri, Majid and Bidhendi, Majid Nabi},
   year={2025}
 }
-Contributing
+# Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
-Contact
+# Contact
 For questions or collaboration opportunities, please contact the corresponding authors.
