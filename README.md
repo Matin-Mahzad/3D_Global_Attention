@@ -1,29 +1,29 @@
 # True 3D Global Attention Convolutional Network for Self-Supervised Denoising of Real-World Post-Stack Seismic Volumes
 # Overview
 This repository contains the implementation of a novel 3D U-Net architecture with global attention mechanisms specifically designed for self-supervised denoising of post-stack seismic volumes. The network uses multi-scale attention and skip connections to effectively remove noise while preserving geological structures.
-Authors
+# Authors
 •	Matin Mahzad (ORCID: 0009-0000-9346-8451)
 •	Amirreza Mehrabi
 •	Majid Bagheri
 •	Majid Nabi Bidhendi
-Architecture
+# Architecture
 The network implements a multi-level encoder-decoder architecture with global attention at each scale:
 Input → Encoder (4 levels) → Bridge → Decoder (4 levels) → Output
-Key Features
+# Key Features
 •	Global 3D Attention: Captures long-range dependencies crucial for seismic noise pattern recognition
 •	Multi-scale Processing: Hierarchical feature extraction at multiple resolutions
 •	Skip Connections: Preserves fine-grained seismic features during reconstruction
 •	Memory Optimization: Efficient attention computation for large 3D volumes
 •	Group Normalization: Stable training on seismic data characteristics
-Requirements
+# Requirements
 •	Python >= 3.7
 •	PyTorch >= 1.9.0
 •	NumPy
-Installation
+# Installation
 git clone https://github.com/Matin-Mahzad/3D_Global_Attention
 cd 3D_Global_Attention
 pip install torch numpy
-Model Architecture Details
+# Model Architecture Details
 GlobalAttention3D
 •	Implements scaled dot-product attention in 3D space
 •	Multi-head attention with memory-efficient computation
@@ -36,7 +36,7 @@ Attention3DUNet
 •	Full 3D U-Net with integrated attention mechanisms
 •	Hierarchical processing with progressive downsampling and upsampling
 •	Self-supervised learning compatible architecture
-Usage
+# Usage
 import torch
 from attention_unet_3d import Attention3DUNet
 
