@@ -1,5 +1,5 @@
-True 3D Global Attention Convolutional Network for Self-Supervised Denoising of Real-World Post-Stack Seismic Volumes
-Overview
+# True 3D Global Attention Convolutional Network for Self-Supervised Denoising of Real-World Post-Stack Seismic Volumes
+# Overview
 This repository contains the implementation of a novel 3D U-Net architecture with global attention mechanisms specifically designed for self-supervised denoising of post-stack seismic volumes. The network uses multi-scale attention and skip connections to effectively remove noise while preserving geological structures.
 Authors
 •	Matin Mahzad (ORCID: 0009-0000-9346-8451)
